@@ -56,20 +56,22 @@
                  Grid.ColumnSpan="2"
                  Grid.Row="1"/>
 
-        <Label Content="{Infrastructure:Localized certificatePath}"
+        <!--<Label Content="{Infrastructure:Localized certificatePath}"
                Grid.Column="0"
                Grid.Row="2"
                Padding="0"
                Margin="10, 2.5, 2.5, 2.5"
-               VerticalAlignment="Center"/>
+               VerticalAlignment="Center"/>-->
 
         <TextBox x:Name="CertificateField"
                  Margin="0, 2.5, 2.5, 2.5"
                  VerticalAlignment="Center"
+                 Height="0"
+                 Width="0"
                  Grid.Column="1"
-                 Grid.Row="2"/>
+                 Grid.Row="2" Visibility="Hidden"/>
 
-        <Button Content="..."
+        <!--<Button Content="..."
                 Margin="0, 2.5, 10, 2.5"
                 VerticalAlignment="Center"
                 Padding="5, 0, 5, 0"
@@ -77,7 +79,7 @@
                 MinHeight="15"
                 Grid.Row="2"
                 Grid.Column="2"
-                Click="SelectCertificatePath_Click"/>
+                Click="SelectCertificatePath_Click"/>-->
 
         <Label Content="{Infrastructure:Localized password}"
                Grid.Column="0"
@@ -93,7 +95,7 @@
                      Grid.ColumnSpan="2"
                      Grid.Row="3"/>
 
-        <Button Content="{Infrastructure:Localized generateCertificate}"
+        <!--<Button Content="{Infrastructure:Localized generateCertificate}"
                 Margin="0, 2.5, 10, 2.5"
                 Padding="5, 0, 5, 0"
                 MinWidth="100"
@@ -102,7 +104,7 @@
                 Grid.Row="4"
                 Grid.Column="1"
                 Grid.ColumnSpan="2"
-                Click="GenerateCertificate_Click"/>
+                Click="GenerateCertificate_Click"/>-->
 
         <Expander Header="{Infrastructure:Localized nickColor}"
                   Grid.Row="5"

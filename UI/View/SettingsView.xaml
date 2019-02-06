@@ -49,14 +49,14 @@
                                         Mode=TwoWay,
                                         UpdateSourceTrigger=PropertyChanged}"/>
 
-                <Label Grid.Column="0"
+                <!--<Label Grid.Column="0"
                        Grid.Row="1"
                        Padding="0"
                        Margin="0, 2.5, 2.5, 2.5"
                        Content="{Infrastructure:Localized certificatePath}"
-                       VerticalAlignment="Center"/>
+                       VerticalAlignment="Center"/>-->
 
-                <TextBox Grid.Column="1"
+                <!--<TextBox Grid.Column="1"
                          Grid.Row="1"
                          VerticalAlignment="Stretch"
                          VerticalContentAlignment="Center"
@@ -86,7 +86,7 @@
                         Grid.ColumnSpan="3"
                         HorizontalAlignment="Right"
                         Command="{Binding ElementName=MainWindow,
-                                          Path=DataContext.SelectedTab.GenerateCertificateCommand}"/>
+                                          Path=DataContext.SelectedTab.GenerateCertificateCommand}"/>-->
 
                 <GroupBox Grid.Column="0"
                           Grid.ColumnSpan="3"
@@ -256,7 +256,7 @@
                                         Mode=TwoWay,
                                         UpdateSourceTrigger=PropertyChanged}"/>
 
-                <Label Grid.Column="0"
+                <!--<Label Grid.Column="0"
                        Grid.Row="2"
                        Padding="0"
                        Margin="0, 2.5, 2.5, 2.5"
@@ -292,7 +292,7 @@
                         Grid.ColumnSpan="3"
                         HorizontalAlignment="Right"
                         Command="{Binding ElementName=MainWindow,
-                                          Path=DataContext.SelectedTab.GenerateCertificateCommand}"/>
+                                          Path=DataContext.SelectedTab.GenerateCertificateCommand}"/>-->
 
                 <Expander Header="{Infrastructure:Localized nickColor}"
                           Grid.Row="4"
@@ -374,7 +374,7 @@
             </Grid>
         </DataTemplate>
 
-        <DataTemplate x:Key="PluginsTemplate">
+        <!--<DataTemplate x:Key="PluginsTemplate">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
@@ -426,7 +426,7 @@
                         Command="{Binding ElementName=MainWindow,
                                           Path=DataContext.SelectedTab.LoadCommand}"/>
             </Grid>
-        </DataTemplate>
+        </DataTemplate>-->
 
         <Style x:Key="TabControlStyle">
             <Style.Triggers>
@@ -448,11 +448,11 @@
                             Value="{StaticResource ResourceKey=ClientTemplate}"/>
                 </DataTrigger>
 
-                <DataTrigger Binding="{Binding Path=SelectedTab.Category}"
+                <!--<DataTrigger Binding="{Binding Path=SelectedTab.Category}"
                              Value="Plugins">
                     <Setter Property="ContentControl.ContentTemplate" 
                             Value="{StaticResource ResourceKey=PluginsTemplate}"/>
-                </DataTrigger>
+                </DataTrigger>-->
             </Style.Triggers>
         </Style>
 

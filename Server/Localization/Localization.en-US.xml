@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Localization>
+  <row key="accept" value="Accept"/>
+  <row key="cancel" value="Cancel"/>
+  <row key="create" value="Create"/>
+  <row key="ok" value="Ok"/>
+  <row key="delete" value="Delete"/>
+  <row key="nick" value="Nick"/>
+  <row key="nickColor" value="Color settings"/>
+  <row key="port" value="Port"/>
+  <row key="serverAddress" value="Server address"/>
+  <row key="protocol" value="Protocol"/>
+  <row key="fieldsError" value="Verify that all fields are filled in correctly."/>
+  <row key="certificatePath" value="Certificate path"/>
+  <row key="generateCertificate" value="Generate certificate"/>
+  <row key="password" value="Password"/>
+  <row key="check-password" value="Repeat password"/>
+
+  <row key="systemMessage-ApiNotSupported" value="API not supported by server."/>
+  <row key="systemMessage-ConnectionRetryAttempt" value="Attempt to connect to server..."/>
+  <row key="systemMessage-NotRegisteredBadName" value="Connection cannot be registered with this nick."/>
+  <row key="systemMessage-NotRegisteredNameAlreadyExist" value="Connection cannot be registered with this nick. It's already in use."/>
+  <row key="systemMessage-NotRegisteredBadThumbprint" value="Connection cant be registered. User id thumbprint does not match certificate."/>
+  <row key="systemMessage-RoomAdminChanged" value="You are now administrator of {0} room."/>
+  <row key="systemMessage-RoomAccessDenied" value="Access denied for this action."/>
+  <row key="systemMessage-RoomAlreadyExist" value="Room with this name already exist. Select other name."/>
+  <row key="systemMessage-RoomCantLeaveMainRoom" value="Can't exit from main room."/>
+  <row key="systemMessage-RoomItsMainRoom" value="This action not available for main room."/>
+  <row key="systemMessage-RoomNotExist" value="Room with this name not exist."/>
+  <row key="systemMessage-FileRemoveAccessDenied" value="You can't delete the file. Access denied."/>
+  <row key="systemMessage-FileRemoved" value="File {0} was deleted."/>
+  <row key="systemMessage-MessageEditAccessDenied" value="You can't edit this message."/>
+  <row key="systemMessage-P2PUserNotExist" value="User with this nick not exist."/>
+  <row key="systemMessage-RoomUserNotExist" value="User with this nick not exist in room."/>
+  <row key="systemMessage-InvalidPassword" value="Invalid password was recived."/>
+  <row key="systemMessage-TextCommandNotFound" value="Text command not found."/>
+  <row key="systemMessage-TextCommandsList" value="There is list of server commands:{0}"/>
+  <row key="systemMessage-TextCommandInvalidParams" value="Command has error in args list."/>
+  <row key="systemMessage-TextCommandMessageId" value="Message id = {0}."/>
+  <row key="systemMessage-TextCommandUsersList" value="Users list:{0}"/>
+
+  <row key="commonMessageTemplate-contextMenu-edit" value="Edit"/>
+  <row key="commonMessageTemplate-contextMenu-copy" value="Copy"/>
+  
+  <row key="userTemplate-SetRoomAdmin" value="Assign as administrator"/>
+  <row key="userTemplate-OpenCertificate" value="Show certificate"/>
+  <row key="userTemplate-SaveCertificate" value="Save user certificate"/>
+  <row key="userTemplate-RemoveCertificate" value="Remove user certificate"/>
+
+  <row key="menu-header-connect" value="Connection"/>S
+  <row key="menu-connect" value="Connect"/>
+  <row key="menu-disconnect" value="Disconnect"/>
+  <row key="menu-enableServer" value="Enable server"/>
+  <row key="menu-disableServer" value="Disable server"/>
+  <row key="menu-exit" value="Exit"/>
+
+  <row key="menu-header-rooms" value="Rooms"/>
+  <row key="menu-createRoom" value="Create"/>
+  <row key="menu-closeRoom" value="Close"/>
+  <row key="menu-inviteInRoom" value="Invite"/>
+  <row key="menu-kickFromRoom" value="Kick"/>
+  <row key="menu-enableVoiceInRoom" value="Enable voice"/>
+  <row key="menu-disableVoiceInRoom" value="Disable voice"/>
+  <row key="menu-exitFromRoom" value="Exit"/>
+
+  <row key="menu-header-File" value="Files"/>
+  <row key="menu-distributedFiles" value="Distributed files"/>
+  <row key="menu-addFileToRoom" value="Add file to room"/>
+
+  <row key="menu-header-plugins" value="Plugins"/>
+
+  <row key="menu-header-other" value="Other"/>
+  <row key="menu-notifications" value="Notifications"/>
+  <row key="menu-show-server-certificate" value="Show server certificate"/>
+  <row key="menu-settings" value="Settings"/>
+  <row key="menu-about" value="About program"/>
+
+  <row key="main-reciver" value="Reciver"/>
+
+  <row key="serverTemplate-p2pPort" value="Port P2P"/>
+  <row key="serverTemplate-p2pPort-default" value="Default"/>
+
+  <row key="audioTemplate-microphone" value="Microphone"/>
+  <row key="audioTemplate-audioQuality" value="Audio quality"/>
+  <row key="audioTemplate-microphoneActivation" value="Microphone activation"/>
+  <row key="audioTemplate-speakers" value="Speakers"/>
+
+  <row key="clientTemplate-Language" value="Language"/>
+
+  <row key="pluginsTemplate-nameHeader" value="Name"/>
+  <row key="pluginsTemplate-enabledHeader" value="Enabled"/>
+  <row key="pluginsTemplate-typeHeader" value="Type"/>
+  <row key="pluginsTemplate-unloadPlugin" value="Unload"/>
+  <row key="pluginsTemplate-loadPlugin" value="Load"/>
+
+  <row key="settings-title" value="Settings"/>
+  <row key="settings-Categories" value="Categories"/>
+  <row key="settings-done" value="Done"/>
+
+  <row key="settingsTabCategory-client" value="Client"/>
+  <row key="settingsTabCategory-server" value="Server"/>
+  <row key="settingsTabCategory-audio" value="Audio"/>
+  <row key="settingsTabCategory-plugins" value="Plugins"/>
+
+  <row key="settingsTab-audio-pressTheKey" value="Click on the button"/>
+  <row key="settingsTab-client-adminPassword" value="Admin password"/>
+
+  <row key="serverCertificateConfirm-title" value="Comfirm server certificate"/>
+  <row key="serverCertificateConfirm-question" value="Server certificate is self signed. Please watch it and accept or decline connection."/>
+  <row key="serverCertificateConfirm-show" value="Show certificate"/>
+  <row key="serverCertificateConfirm-save" value="Trust this certificate"/>
+
+  <row key="aboutProgram-title" value="About program"/>
+  <row key="aboutProgram-author" value="Author"/>
+  <row key="aboutProgram-feedback" value="Feedback"/>
+
+  <row key="serverDialog-title" value="Server"/>
+
+  <row key="generateCertificateDialog-title" value="Generate certificate"/>
+
+  <row key="connectDialog-title" value="Connection"/>
+  <row key="connectDialog-uri" value="Server uri"/>
+
+  <row key="createRoomDialog-title" value="Room creation"/>
+  <row key="createRoomDialog-roomName" value="Name"/>
+  <row key="createRoomDialog-audioRoom" value="Audio room"/>
+
+  <row key="postedFilesDialog-title" value="Distributed files"/>
+
+  <row key="mainViewModel-paramsError" value="Error in input values."/>
+  <row key="mainViewModel-clientNotCreated" value="Client not connected to any server. Connect to server first."/>
+  <row key="mainViewModel-apiNotSupported" value="Appliaction not supported this version of Api ({0}). Connection refused."/>
+  <row key="mainViewModel-roomExitQuestion" value="Do you want to leave the room?"/>
+  <row key="mainViewModel-roomCloseQuestion" value="Do you want to close the room?"/>
+  <row key="mainViewModel-serverDisableQuestion" value="Do you want to disable the server"/>
+  <row key="mainViewModel-fileMustDontExist" value="You must select not existing file."/>
+  <row key="mainViewModel-allInRoom" value="All in room"/>
+  <row key="mainViewModel-audioInitializationFailed" value="Audio system not initialized. Voice chat disabled."/>
+
+  <row key="messageViewModel-from" value="[{0}] from: "/>
+  <row key="messageViewModel-pmForm" value="[{0}] PM from: "/>
+  <row key="messageViewModel-byteStr" value="byte"/>
+  <row key="messageViewModel-kbyteStr" value="Kb"/>
+  <row key="messageViewModel-mbyteStr" value="Mb"/>
+  <row key="messageViewModel-fileNotFound" value="File not availavle"/>
+  <row key="messageViewModel-cantDownloadItsFile" value="You must not download own file."/>
+  <row key="messageViewModel-cancelDownloadingQuestion" value="You aleady download this file. Cancel downloading?"/>
+  <row key="messageViewModel-fileDownloaded" value="File {0} downloaded."/>
+  <row key="messageViewModel-fileRemoved" value="File removed form server."/>
+
+  <row key="roomViewModel-inviteInRoomTitle" value="Invite in room"/>
+  <row key="roomViewModel-kickFormRoomTitle" value="Kick from room"/>
+  <row key="roomViewModel-nobodyToInvite" value="Nobody to invite. All already in the room."/>
+  <row key="roomViewModel-allInRoom" value="All in room"/>
+  
+  <row key="userViewModel-userNotExist" value="User does not exist."/>
+
+  <row key="errorCode-ApiNotSupported" value="Server api not supported by client. You probably need to update client or server."/>
+  <row key="errorCode-FileAlreadyDownloading" value="This file already downloading."/>
+  <row key="errorCode-FreePortDontFound" value="Free tcp/udp port nod found."/>
+  <row key="errorCode-LargeReceivedData" value="Received data to large."/>
+  <row key="errorCode-CantDownloadOwnFile" value="Can't download this file."/>
+  <row key="errorCode-AudioNotEnabled" value="Audio not enabled."/>
+  <row key="errorCode-PluginError" value="Some plugin error has occurred."/>
+  <row key="errorCode-RoomNotFound" value="Room not found."/>
+  <row key="errorCode-FileInRoomNotFound" value="File in room not found."/>
+  <row key="errorCode-WrongContentType" value="Wrong content type (internal error)."/>
+  <row key="errorCode-IllegalInvoker" value="Illegal invoker (internal error)."/>
+  <row key="errorCode-UnknownRoomType" value="Unknown room type was recived."/>
+</Localization>

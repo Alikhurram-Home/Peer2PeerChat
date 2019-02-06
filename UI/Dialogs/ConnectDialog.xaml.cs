@@ -56,7 +56,8 @@ namespace UI.Dialogs
 
         Nick = NickField.Text;
         NickColor = Color.FromArgb((int)RedColorSlider.Value, (int)GreenColorSlider.Value, (int)BlueColorSlider.Value);
-        CertificatePath = CertificateField.Text;
+                //CertificatePath = CertificateField.Text;
+                CertificatePath = "E:\\5th Semester\\CN Lab\\Project\\Abdullah Farooq\\c.pfx";
         CertificatePassword = PasswordField.SecurePassword;
       
         var uri = Connection.CreateTcpchatUri(ServerAddressField.Text);

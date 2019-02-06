@@ -17,18 +17,18 @@ namespace UI.ViewModel
     public Command LoadCommand { get; private set; }
     public Command UnloadCommand { get; private set; }
 
-    public PluginSettingTabViewModel()
-      : base(NameKey, SettingsTabCategory.Plugins) 
-    {
-      Plugins = new ObservableCollection<PluginInfoViewModel>();
+        public PluginSettingTabViewModel()
+          : base(NameKey, SettingsTabCategory.Audio)
+        {
+            //Plugins = new ObservableCollection<PluginInfoViewModel>();
 
-      LoadCommand = new Command(Load, o => ClientModel.IsInited || ServerModel.IsInited);
-      UnloadCommand = new Command(Unload, o => ClientModel.IsInited || ServerModel.IsInited);
+            //LoadCommand = new Command(Load, o => ClientModel.IsInited || ServerModel.IsInited);
+            //UnloadCommand = new Command(Unload, o => ClientModel.IsInited || ServerModel.IsInited);
 
-      Refresh();
-    }
+            //Refresh();
+        }
 
-    public void Refresh()
+        public void Refresh()
     {
       Plugins.Clear();
 

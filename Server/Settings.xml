@@ -1,0 +1,25 @@
+﻿<?xml version="1.0"?>
+<Settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Locale>en-US</Locale>
+  <Nick>User</Nick>
+  <NickColor>
+    <R>170</R>
+    <G>50</G>
+    <B>50</B>
+  </NickColor>
+  <RandomColor>true</RandomColor>
+  <AdminPassword>HelloWorld</AdminPassword>
+  <FormSize>
+    <Width>380</Width>
+    <Height>470</Height>
+  </FormSize>
+  <Alerts>true</Alerts>
+  <ServerAddress>93.170.186.160:10021</ServerAddress>
+  <TrustedCertificatesPath>TrustedCertificates</TrustedCertificatesPath>
+  <ServerStartAddress>0.0.0.0:10021</ServerStartAddress>
+  <ServerStartP2PPort>10022</ServerStartP2PPort>
+  <ServerStartUseIpv6>false</ServerStartUseIpv6>
+  <RecorderKey>E</RecorderKey>
+  <Frequency>44100</Frequency>
+  <Bits>16</Bits>
+</Settings>

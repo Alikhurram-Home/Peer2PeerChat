@@ -8,10 +8,12 @@ using Engine.Model.Server;
 using Engine.Network;
 using System;
 using System.Collections.ObjectModel;
+using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Sockets;
+using System.Security;
 using System.Security.Cryptography.X509Certificates;
 using System.Windows;
 using System.Windows.Input;
@@ -205,9 +207,10 @@ namespace UI.ViewModel
 
     private void Connect(object obj)
     {
-      var dialog = new ConnectDialog();
-      if (dialog.ShowDialog() == true)
-      {
+        //if(true)
+        var dialog = new ConnectDialog();
+        if (dialog.ShowDialog() == true)
+        {
         try
         {
           var trustedCertitifcatesPath = Settings.Current.TrustedCertificatesPath;
@@ -219,13 +222,19 @@ namespace UI.ViewModel
             .Where(s => !s.Enabled)
             .Select(s => s.Name)
             .ToArray();
+                    var path = AppDomain.CurrentDomain.BaseDirectory+"TrustedCertificates\\c.pfx";
+                    //var path = "E:\\5th Semester\\CN Lab\\Project\\Abdullah Farooq\\c.pfx";
+                    SecureString password = new NetworkCredential("", "1234").SecurePassword;
+                    var initializer = new ClientInitializer
+                    {
+                        Nick = dialog.Nick,
+                        NickColor = dialog.NickColor,
+                        Certificate = new X509Certificate2(dialog.CertificatePath, dialog.CertificatePassword),
+                        //Nick = "Server",
+                        //          NickColor = Color.Red,
 
-          var initializer = new ClientInitializer
-          {
-            Nick = dialog.Nick,
-            NickColor = dialog.NickColor,
-            Certificate = new X509Certificate2(dialog.CertificatePath, dialog.CertificatePassword),
-            TrustedCertificatesPath = trustedCertitifcatesPath,
+                        //Certificate = new X509Certificate2(path, password),
+                        TrustedCertificatesPath = trustedCertitifcatesPath,
 
             PluginsPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, PluginsDirectoryName),
             ExcludedPlugins = excludedPlugins

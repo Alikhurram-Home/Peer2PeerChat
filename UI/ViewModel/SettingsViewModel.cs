@@ -37,7 +37,7 @@ namespace UI.ViewModel
         new ClientTabViewModel(),
         new ServerTabViewModel(),
         new AudioTabViewModel(),
-        new PluginSettingTabViewModel()
+        //new PluginSettingTabViewModel()
       };
 
       SelectedTab = Tabs[0];

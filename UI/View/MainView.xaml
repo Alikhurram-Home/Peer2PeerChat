@@ -5,8 +5,9 @@
         xmlns:View="clr-namespace:UI.View"
         xmlns:ViewModel="clr-namespace:UI.ViewModel"
         xmlns:Infrastructure="clr-namespace:UI.Infrastructure"
+        xmlns:emoji="clr-namespace:Emoji.Wpf;assembly=Emoji.Wpf"
         WindowStartupLocation="CenterScreen"
-        Title="TCP Chat"
+        Title="Peer to Peer Chat"
         MinHeight="470"
         MinWidth="380"
         Height="470" 
@@ -15,50 +16,49 @@
 
     <Window.Resources>
 
+
         <DataTemplate x:Key="CommonMessageTemplate">
             <StackPanel Orientation="Vertical">
                 <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="{Binding Path=Title}"
+                    <emoji:TextBlock Text="{Binding Path=Title}"
                                FontWeight="Bold"
                                TextWrapping="Wrap"
                                Foreground="#FFAA0000"
                                Margin="6, 2.5, 0, 2.5"/>
 
-                    <TextBlock Text="{Binding Path=Sender.Nick}"
+                    <emoji:TextBlock Text="{Binding Path=Sender.Nick}"
                                FontWeight="Bold"
                                Margin="0, 2.5, 5, 2.5"
                                TextWrapping="Wrap">
 
-                        <TextBlock.Foreground>
-                            <SolidColorBrush x:Name="commonColorBrush" Color="{Binding Path=Sender.NickColor}"/>
-                        </TextBlock.Foreground>
+                        <emoji:TextBlock.Foreground>
+                            <SolidColorBrush Color="{Binding Path=Sender.NickColor}"/>
+                        </emoji:TextBlock.Foreground>
 
-                    </TextBlock>
+                    </emoji:TextBlock>
                 </StackPanel>
 
-                <TextBox IsReadOnly="True"
-                         BorderThickness="0"
+                <emoji:TextBlock 
                          Text="{Binding Path=Text}"
                          TextWrapping="Wrap"
                          Margin="5, 2.5, 5, 2.5"
                          Padding="0"
                          Background="Transparent">
-                    <TextBox.ContextMenu>
+                    <emoji:TextBlock.ContextMenu>
                         <ContextMenu>
                             <MenuItem Header="{Infrastructure:Localized commonMessageTemplate-contextMenu-copy}"
                                       Command="Copy"/>
                             <MenuItem Header="{Infrastructure:Localized commonMessageTemplate-contextMenu-edit}"
                                       Command="{Binding Path=EditMessageCommand}"/>
                         </ContextMenu>
-                    </TextBox.ContextMenu>
-                </TextBox>
+                    </emoji:TextBlock.ContextMenu>
+                </emoji:TextBlock>
             </StackPanel>
         </DataTemplate>
 
         <DataTemplate x:Key="SystemMessageTemplate">
             <StackPanel Orientation="Vertical">
-                <TextBox IsReadOnly="True"
-                         BorderThickness="0"
+                <emoji:TextBlock 
                          Text="{Binding Path=Text}"
                          TextWrapping="Wrap"
                          Margin="5, 2.5, 5, 2.5"
@@ -104,8 +104,7 @@
                     </TextBlock>
                 </StackPanel>
 
-                <TextBox IsReadOnly="True"
-                         BorderThickness="0"
+                <emoji:TextBlock 
                          Text="{Binding Path=Text}"
                          TextWrapping="Wrap"
                          Margin="5, 2.5, 5, 2.5"
@@ -216,10 +215,10 @@
                                     <Setter Property="Image.Source" Value="/TCPChat;component/Images/checked.png"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding Path=CheckStatus}" Value="CheckedNotMatch">
-                                    <Setter Property="Image.Source" Value="/TCPChat;component/Images/checkedNotMatch.png"/>
+                                    <Setter Property="Image.Source" Value="/TCPChat;component/Images/checked.png"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding Path=CheckStatus}" Value="NotChecked">
-                                    <Setter Property="Image.Source" Value="/TCPChat;component/Images/notChecked.png"/>
+                                    <Setter Property="Image.Source" Value="/TCPChat;component/Images/checked.png"/>
                                 </DataTrigger>
                             </Style.Triggers>
                         </Style>
@@ -483,7 +482,7 @@
                           Command="{Binding SelectedRoom.AddFileCommand}"/>
             </MenuItem>
 
-            <MenuItem Header="{Infrastructure:Localized menu-header-plugins}"
+            <!--<MenuItem Header="{Infrastructure:Localized menu-header-plugins}"
                       ItemsSource="{Binding Plugins}">
                 <MenuItem.ItemContainerStyle>
                     <Style TargetType="MenuItem">
@@ -491,14 +490,14 @@
                         <Setter Property="Command" Value="{Binding InvokeCommand}"/>
                     </Style>
                 </MenuItem.ItemContainerStyle>
-            </MenuItem>
+            </MenuItem>-->
 
             <MenuItem Header="{Infrastructure:Localized menu-header-other}">
                 <MenuItem Header="{Infrastructure:Localized menu-notifications}"
                           IsCheckable="True"
                           IsChecked="{Binding Alerts, Mode=TwoWay}"/>
-                <MenuItem Header="{Infrastructure:Localized menu-show-server-certificate}"
-                          Command="{Binding ShowServerCertificateCommand}"/>
+                <!--<MenuItem Header="{Infrastructure:Localized menu-show-server-certificate}"
+                          Command="{Binding ShowServerCertificateCommand}"/>-->
                 <MenuItem Header="{Infrastructure:Localized menu-settings}"
                           Command="{Binding OpenSettingsCommand}"/>
                 <MenuItem Header="{Infrastructure:Localized menu-about}"
